@@ -50,7 +50,7 @@ export const useMainStore = defineStore('main', {
     hoveredObject: undefined,
     leavedObject: undefined,
     currentPoint: null,
-    rightState: RightStates.ELEMENT_CANVAS,
+    rightState: RightStates.ELEMENT_CANVAS, // 右侧面板状态
     imageCategoryType: [],
     imageCategoryData: ImageCategoryInfo,
     illustrationCategoryType: [],

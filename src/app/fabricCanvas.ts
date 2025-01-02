@@ -20,6 +20,10 @@ export class FabricCanvas extends Canvas {
     return this.activeObject ? this.activeObject.value : undefined
   }
 
+	/**
+	 * fabric库原本没有这个方法 可以通过这个方法设置一个公有变量activeObject
+	 * 用以获取当前选中的对象 避免直接访问私有变量
+	 */
   public set _activeObject(value) {
     const mainStore = useMainStore()
     mainStore.setCanvasObject(value as FabricObject)
